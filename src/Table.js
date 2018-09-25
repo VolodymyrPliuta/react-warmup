@@ -18,9 +18,16 @@ class Table extends Component {
 
   render() {
     return(
-      <div>
+      <div style = {{display: 'flex'}}>
         <p onClick = {this.onclick}>Hello Table</p>
         <p style={this.state.color}> {this.state.array}</p>
+        <table style={{justifyContent: 'center'}}>
+          <tr>
+            <th>Fisrs Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </table>
       </div>
     )
   }
