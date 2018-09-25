@@ -14,8 +14,6 @@ class Table extends Component {
       {array: ['Just', 'Hello']}
     )
     console.log("Hi there")
-    
-    
   }
 
   render() {

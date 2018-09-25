@@ -8,18 +8,18 @@ class Ajax extends Component {
     }
   }
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    fetch('https://jsonplaceholder.typicode.com/albums/1')
       .then(response => response.json())
       .then(json => {
         this.setState({
-          ajax: json.title
+          ajax: JSON.stringify(json)
         })
       })
   }
   render() {
     return(
       <div>
-         
+        <p>{this.state.ajax} </p>
       </div>
     )
   }
